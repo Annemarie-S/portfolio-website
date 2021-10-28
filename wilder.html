@@ -2,11 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@200;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Wilder App - Increasing the biodiversity in your garden - UI/UX </title>
   </head>
-  <body>
+  <body id="wilder">
     <header>
       <div>
         <img src="images/logo_a_schaepman.svg" alt="Annemarie Schaepman" >
@@ -27,7 +34,7 @@
         </span>
       </div>
 
-      <div>
+      <div id="casestudy">
         <div>
           <div>
             <picture>
@@ -92,18 +99,14 @@
                   </div>
 
                   <div>
-                    <span>
-                        <h2>Moodboard</h2>
-                      </span>
+                    <h2>Moodboard</h2>
                       <picture>
                         <source srcset="images/wilder/moodboard_wilder1x.jpg" media="(max-width:767px)">
                           <img src="images/wilder/moodboard_wilder2x.jpg" alt="wilder moodboard">
                         </picture>
                       </div>
                       <div>
-                        <span>
-                            <h2>Userflow</h2>
-                          </span>
+                        <h2>Userflow</h2>
                           <picture>
                             <source srcset="images/wilder/user_flow_wilder1x.png" media="(max-width:767px)">
                               <img src="images/wilder/user_flow_wilder2x.png" alt="wilder userflow">
@@ -117,9 +120,7 @@
                           </div>
 
                           <div>
-                            <span>
-                                <h2>Wireframes</h2>
-                              </span>
+                            <h2>Wireframes</h2>
                               <picture>
                                 <source srcset="images/wilder/mid-fi_wireframes_wilder1x.png" media="(max-width:767px)">
                                   <img src="images/wilder/mid-fi_wireframes_wilder2x.png" alt="wilder mid-fidelity wireframes">
@@ -131,13 +132,11 @@
                               </div>
 
                               <div>
-                                <span>
-                                    <h2>Prototypes & User Testing</h2>
-                                  </span>
-                                  <picture>
-                                    <source srcset="images/wilder/final_mockup_diagonal_wilder1x.png" media="(max-width:767px)">
-                                      <img src="images/wilder/final_mockup_diagonal_wilder2x.png" alt="wilder mid-fidelity wireframes">
-                                    </picture>
+                                <h2>Prototypes & User Testing</h2>
+                                <picture>
+                                  <source srcset="images/wilder/final_mockup_diagonal_wilder1x.png" media="(max-width:767px)">
+                                    <img src="images/wilder/final_mockup_diagonal_wilder2x.png" alt="wilder prototype">
+                                  </picture>
                                     <p>The mid-fidelity wireframes were tested for functionality by several different users and adjustments were made accordingly. This was
                                       followed by the high-fidelity wireframes that were converted to
                                       prototypes. The prototypes were then reviewed by various users for
@@ -146,10 +145,8 @@
                                   </div>
 
                                   <div>
-                                    <span>
-                                        <h2>Handoff</h2>
-                                      </span>
-                                      <p>The last finishing touches and adaptations were made with the help
+                                    <h2>Handoff</h2>
+                                    <p>The last finishing touches and adaptations were made with the help
                                           of the user feedback.
                                         </p>
                                         <h3>In the Future</h3>
@@ -180,7 +177,7 @@
         <p>Looking to collaborate, work with me or just have a chat?  Call: <a href="tel:+331234567">+33 1234567</a> or Skype me at <a href="skype:live:.cid.38261e6970729b83">Annemarie Schaepman</a>. Prefer email?
         </p>
         <div>
-          <a href="mailto:annemarie.schaepman@gmail.com">Email me</a>
+          <a href="mailto:annemarie.schaepman@gmail.com" class="button contact">Email me</a>
         </div>
 
         <div>
@@ -240,6 +237,7 @@
               <p>Copyright Annemarie Schaepman 2021
               </p>
             </div>
+          </div>
           </div>
         </footer>
       </body>
