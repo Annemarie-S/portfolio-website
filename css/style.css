@@ -1,0 +1,92 @@
+/*
+Colors used:
+Background  Color (Off-White): rgb(249, 248, 246);
+Background Secondary Color (Beige): rgb(241, 237, 235);
+Primary Color (Brown): rgb(183,135,104);
+Secondary Color (Light Brown): rgb(218,198,183);
+Text Color (Charcoal Black): rgb(32,25,8);
+*/
+html {scroll-behavior: smooth;}
+
+body {
+  background-color: rgb(249,248,246);
+  font-family: 'Palanquin', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: rgb(32,25,8);
+}
+
+h1, h2, h3 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.44em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.95em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.23em;
+  font-weight: 400;
+}
+p, li {
+  font-size: 1em;
+  font-weight: 200;
+  font-family: 'Palanquin', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: rgb(183,135,104);
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: rgb(218,198,183);
+  text-decoration: underline;
+}
+a:visited {
+  color: rgb(183,135,104);
+}
+a:active {
+  color: rgb(183,135,104);
+}
+
+.button {
+  display: inline-block;
+  background-color: rgb(183,135,104);
+  color: rgb(255,255,255);
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgb(218,198,183);
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button:active {
+  color: rgb(255,255,255);
+}
+.button.contact {
+  background-color: transparent;
+  color: rgb(183,135,104);
+  border: 2px solid rgb(183,135,104);
+}
+.button.contact:hover {
+  background-color: rgb(218,198,183);
+  color: rgb(255,255,255);
+  border: 2px solid transparent;
+}
+.button:active {
+  color: rgb(183,135,104);
+}
