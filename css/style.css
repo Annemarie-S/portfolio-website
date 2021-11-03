@@ -8,8 +8,60 @@ Text Color (Charcoal Black): rgb(32,25,8);
 */
 html {scroll-behavior: smooth;}
 
+* {
+  box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(240, 231, 224);
+    text-align: center;
+    padding: 10px 0;
+    -webkit-box-shadow: 2px 3px 11px 0px rgba(193, 181, 181, 0.43);
+    -moz-box-shadow:    2px 3px 11px 0px rgba(193, 181, 181, 0.43);
+    box-shadow:         2px 3px 11px 0px rgba(193, 181, 181, 0.43);
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Palanquin', sans-serif;
+  color: rgb(183,135,104);
+}
+
+nav > ul > li > a:visited {
+  color: rgb(204, 153, 102);
+}
+
+nav > ul > li > a:hover {
+  color: rgb(32,25,8);
+}
+nav > ul > li > a:active {
+  color: rgb(183,135,104);
+}
+
+main {
+  padding-top: 133px;
+}
+
 body {
-  background-color: rgb(249,248,246);
+  background-color: rgb(247,243,239);
   font-family: 'Palanquin', sans-serif;
   font-family: 'Playfair Display', serif;
   font-size: 16px;
@@ -22,7 +74,7 @@ h1, h2, h3 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.44em;
+  font-size: 2.2em;
   font-weight: 800;
 }
 
@@ -35,6 +87,12 @@ h3 {
   font-size: 1.23em;
   font-weight: 400;
 }
+
+h4 {
+  font-size: 0.6em;
+  font-weight: 200;
+  font-family: 'Palanquin', sans-serif;
+}
 p, li {
   font-size: 1em;
   font-weight: 200;
@@ -43,6 +101,7 @@ p, li {
 
 img {
   width: 100%;
+  max-width: 1000px;
 }
 
 a {
@@ -54,10 +113,15 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 a:visited {
-  color: rgb(183,135,104);
+  color: rgb(241,237,235);
 }
 a:active {
   color: rgb(183,135,104);
+}
+
+.logo{
+  width: 25%;
+  max-width: 250px;
 }
 
 .button {
@@ -67,20 +131,26 @@ a:active {
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgb(218,198,183);
   transition: 0.2s opacity;
+  -webkit-box-shadow: 2px 3px 11px 0px rgba(193, 181, 181, 0.73);
+  -moz-box-shadow:    2px 3px 11px 0px rgba(193, 181, 181, 0.73);
+  box-shadow:         2px 3px 11px 0px rgba(193, 181, 181, 0.73);
 }
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.5;
   text-decoration: none;
 }
 .button:active {
   color: rgb(255,255,255);
+  -webkit-box-shadow: 2px 3px 11px 0px rgba(193, 181, 181, 0.73);
+  -moz-box-shadow:    2px 3px 11px 0px rgba(193, 181, 181, 0.73);
+  box-shadow:         2px 3px 11px 0px rgba(193, 181, 181, 0.73);
 }
 .button.contact {
   background-color: transparent;
   color: rgb(183,135,104);
   border: 2px solid rgb(183,135,104);
+  margin: 2px 0;
 }
 .button.contact:hover {
   background-color: rgb(218,198,183);
@@ -89,4 +159,40 @@ a:active {
 }
 .button:active {
   color: rgb(183,135,104);
+}
+
+.socialicons {
+  text-align:center;
+  padding: 20px;
+}
+
+.icons {
+  width: 12%;
+  max-width: 42px;
+  margin: 20;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero {
+  background-color: rgb(240, 231, 224);
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1{
+  text-align: center;
 }
