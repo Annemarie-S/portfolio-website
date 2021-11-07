@@ -1,11 +1,12 @@
 /*
 Colors used:
 Background  Color (Off-White): rgb(249, 248, 246);
-Background Secondary Color (Beige): rgb(241, 237, 235);
+Background Secondary Color (Blushy Pink): rgb(240, 231, 224);
 Primary Color (Brown): rgb(183,135,104);
 Secondary Color (Light Brown): rgb(218,198,183);
 Text Color (Charcoal Black): rgb(32,25,8);
 */
+
 html {scroll-behavior: smooth;}
 
 * {
@@ -42,22 +43,23 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   font-family: 'Palanquin', sans-serif;
-  color: rgb(183,135,104);
+  color: rgb(32,25,8);
 }
 
 nav > ul > li > a:visited {
-  color: rgb(204, 153, 102);
-}
-
-nav > ul > li > a:hover {
-  color: rgb(32,25,8);
-}
-nav > ul > li > a:active {
   color: rgb(183,135,104);
 }
 
+nav > ul > li > a:hover {
+  color: rgb(218,198,183);
+}
+nav > ul > li > a:active {
+  color: rgb(32,25,8);
+}
+
 main {
-  padding-top: 133px;
+padding: 100px 0 0 0;
+
 }
 
 body {
@@ -74,22 +76,27 @@ h1, h2, h3 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.2em;
+  font-size: 3.05em;
   font-weight: 800;
 }
 
 h2 {
-  font-size: 1.95em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 400;
+  font-family: Palanquin;
+  text-transform: uppercase;
+
 }
 
 h3 {
-  font-size: 1.23em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: Palanquin;
+  text-transform: uppercase;
 }
 
 h4 {
-  font-size: 0.6em;
+  font-size: 0.9em;
   font-weight: 200;
   font-family: 'Palanquin', sans-serif;
 }
@@ -100,8 +107,17 @@ p, li {
 }
 
 img {
-  width: 100%;
-  max-width: 1000px;
+width: 100%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img.logo{
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -119,25 +135,36 @@ a:active {
   color: rgb(183,135,104);
 }
 
-.logo{
-  width: 25%;
+.biopic{
+	border-radius: 10%;
   max-width: 250px;
+  float: left;
 }
+
+.biotxt{
+  display: inline-block;
+  width:100%;
+}
+
 
 .button {
   display: inline-block;
   background-color: rgb(183,135,104);
   color: rgb(255,255,255);
   font-weight: 400;
+  font-family: Palanquin;
+  text-transform: uppercase;
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
   -webkit-box-shadow: 2px 3px 11px 0px rgba(193, 181, 181, 0.73);
   -moz-box-shadow:    2px 3px 11px 0px rgba(193, 181, 181, 0.73);
   box-shadow:         2px 3px 11px 0px rgba(193, 181, 181, 0.73);
+  transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   text-decoration: none;
 }
 .button:active {
@@ -161,10 +188,6 @@ a:active {
   color: rgb(183,135,104);
 }
 
-.socialicons {
-  text-align:center;
-  padding: 20px;
-}
 
 .icons {
   width: 12%;
@@ -178,21 +201,171 @@ a:active {
 
 /* Layout styling */
 
+.row {
+  margin: 25px 0;
+  display: inline-block;
+}
+
 .container {
   padding: 0 15px;
 }
 
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+
+.imghands {
+  width: 95%;
+  max-width: 100%;
+  height: auto;
+}
+
+.socialicons {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.socialiconset {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.biohdr span {
+  padding-top: 60px;
+  display:block;
+}
+
+.wilderhdr span {
+  padding-top: 60px;
+  display:block;
+}
+
+.singlescreenwilder{
+  width: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .herotxt{
+    padding: 10px 0;
+  }
+
 
 #hero {
   background-color: rgb(240, 231, 224);
-  padding: 20px 0;
+  padding-top: 25px;
   display: inline-block;
   width: 100%;
 }
 
 #hero h1{
   text-align: center;
+  font-weight: 200;
+  color: rgb(32,25,8);;
+  font-size: 1.8em;
+}
+
+#hero span {
+  display: block;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  img.logo{
+    width: 8%;
+    max width: 250px;
+    margin: 0;
+    float: left;
+  }
+
+  main{
+    padding: 90px 0 0 0;
+  }
+
+  .col-md-6 {
+  width: 50%;
+  }
+
+  .biohdr span {
+    padding-top: 20px;
+    display:block;
+  }
+
+  .wilderhdr span {
+    padding-top: 20px;
+    display:block;
+  }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main{
+    padding: 90px 0 0 0;
+  }
+
+  img.logo{
+    width: 5%;
+    max width: 250px;
+    margin: 0;
+    float: left;
+  }
+
+
+  .col-lg-3 {
+  width: 25%;
+  }
+
+  .col-lg-5 {
+  width: 41.66%;
+  }
+
+  .col-lg-7 {
+  width: 58.33%;
+  }
+
+  .col-lg-9 {
+  width: 75%;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
