@@ -13,10 +13,10 @@ html {scroll-behavior: smooth;}
   box-sizing: border-box;
 }
 
+
 header {
     background-color: rgb(240, 231, 224);
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 4px;
     -webkit-box-shadow: 2px 3px 11px 0px rgba(193, 181, 181, 0.43);
     -moz-box-shadow:    2px 3px 11px 0px rgba(193, 181, 181, 0.43);
     box-shadow:         2px 3px 11px 0px rgba(193, 181, 181, 0.43);
@@ -24,19 +24,17 @@ header {
     width: 100%;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+main {
+padding: 55px 0 0 0;
+
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -57,10 +55,22 @@ nav > ul > li > a:active {
   color: rgb(32,25,8);
 }
 
-main {
-padding: 100px 0 0 0;
-
+.navtoggle li:not(:last-child) {
+  display: none;
 }
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
 
 body {
   background-color: rgb(247,243,239);
@@ -114,10 +124,11 @@ margin-right: auto;
 }
 
 img.logo{
-  width: 25%;
+  width: 8%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  float: left;
 }
 
 a {
@@ -259,9 +270,9 @@ a:active {
 
 #hero {
   background-color: rgb(240, 231, 224);
-  padding-top: 25px;
-  display: inline-block;
-  width: 100%;
+    display: inline-block;
+    padding-top: 20px;
+    width: 100%;
 }
 
 #hero h1{
@@ -288,22 +299,54 @@ a:active {
     padding: 20px 0 13px;
   }
 
+  img.logo{
+    width: 5%;
+    display: block;
+    max width: 150px;
+    margin: 0;
+    float: left;
+  }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
 
-  img.logo{
-    width: 8%;
-    max width: 250px;
-    margin: 0;
-    float: left;
+  nav > ul > li {
+    display: inline-block;
+    }
+
+  nav > ul {
+  margin: 1em 0;
   }
 
-  main{
-    padding: 90px 0 0 0;
+  .navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
   }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+
 
   .col-md-6 {
   width: 50%;
@@ -334,13 +377,15 @@ a:active {
     margin-top: 4px;
   }
 
-  main{
-    padding: 90px 0 0 0;
-  }
+  .navtoggle li:last-child {
+  display: none;
+}
+
 
   img.logo{
-    width: 5%;
-    max width: 250px;
+    width: 55px;
+    display: block;
+    max width: 150px;
     margin: 0;
     float: left;
   }
