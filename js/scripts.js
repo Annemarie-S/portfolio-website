@@ -5,9 +5,9 @@ function menuToggle() {
   } else {
     x.className = 'navtoggle';
   }
-};
+}
 
-console.log("Welcome to my portfolio, nice to see you here!");
+/*console.log("Welcome to my portfolio, nice to see you here!");
 
 var person = {
   name: "Annemarie",
@@ -22,3 +22,4 @@ console.log(person.hobbies);
 for (var i = 1; i <= 100; i++) {
   console.log(i);
 };
+*/
