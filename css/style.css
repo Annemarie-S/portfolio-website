@@ -3,8 +3,9 @@ Colors used:
 Background  Color (Off-White): rgb(249, 248, 246);
 Background Secondary Color (Blushy Pink): rgb(240, 231, 224);
 Primary Color (Brown): rgb(183,135,104);
-Secondary Color (Light Brown): rgb(218,198,183);
+Secondary Color (Blue): rgb(17, 75, 95);
 Text Color (Charcoal Black): rgb(32,25,8);
+Other (Green): rgb(92,148,110);
 */
 
 html {scroll-behavior: smooth;}
@@ -55,11 +56,11 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:visited {
-  color: rgb(183,135,104);
+  color: rgb(32,25,8);
 }
 
 nav > ul > li > a:hover {
-  color: rgb(218,198,183);
+  color: rgb(17, 75, 95);
 }
 nav > ul > li > a:active {
   color: rgb(32,25,8);
@@ -98,6 +99,7 @@ h1, h2, h3 {
 h1 {
   font-size: 3.05em;
   font-weight: 800;
+
 }
 
 h2 {
@@ -159,6 +161,8 @@ a:active {
 .biopic{
 	border-radius: 10%;
   max-width: 250px;
+  margin-top: 50px;
+  display:inline-block;
   float: left;
 }
 
@@ -170,7 +174,7 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: rgb(183,135,104);
+  background-color: rgb(17, 75, 95);
   color: rgb(255,255,255);
   font-weight: 400;
   font-family: Palanquin;
@@ -196,12 +200,13 @@ a:active {
 }
 .button.contact {
   background-color: transparent;
-  color: rgb(183,135,104);
-  border: 2px solid rgb(183,135,104);
+  color: rgb(17, 75, 95);
+  border: 2px solid rgb(17, 75, 95);
   margin: 2px 0;
 }
 .button.contact:hover {
-  background-color: rgb(218,198,183);
+  background-color: rgb(17, 75, 95);
+  opacity: 75%;
   color: rgb(255,255,255);
   border: 2px solid transparent;
 }
@@ -239,9 +244,17 @@ a:active {
 }
 
 .imghands {
-  width: 95%;
+  width: 75%;
   max-width: 100%;
   height: auto;
+}
+
+.huskhullimg {
+  border-radius: 25px;
+}
+
+.wilderimg {
+  border-radius: 15px;
 }
 
 .socialicons {
@@ -256,30 +269,21 @@ a:active {
   text-align: center;
 }
 
-.biohdr span {
-  padding-top: 60px;
-  display:block;
-}
-
-.wilderhdr span {
-  padding-top: 60px;
-  display:block;
-}
-
 .singlescreenwilder{
-  width: 65%;
-  display: block;
+  width: 100%;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 20px;
   }
 
   .herotxt{
-    padding: 10px 0;
+    padding: 50px 0;
   }
 
 
 #hero {
-  background-color: rgb(240, 231, 224);
+  background-color: rgb(180, 207, 176);
     display: inline-block;
     padding-top: 20px;
     width: 100%;
@@ -287,9 +291,15 @@ a:active {
 
 #hero h1{
   text-align: center;
-  font-weight: 200;
-  color: rgb(32,25,8);;
-  font-size: 1.8em;
+  font-size: 1.5em;
+  letter-spacing: 0px;
+  word-spacing: 1.8px;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style:normal;
+  text-transform: none;
+
 }
 
 #hero span {
@@ -361,7 +371,7 @@ nav > ul > li {
   }
 
   .biohdr span {
-    padding-top: 20px;
+    padding-top: 1px;
     display:block;
   }
 
@@ -420,5 +430,7 @@ nav > ul > li {
   margin-left: auto;
   margin-right: auto;
 }
-
+.singlescreenwilder{
+  padding-top:90px;
+}
 }
